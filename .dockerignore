@@ -1,0 +1,11 @@
+docker*
+Docker*
+
+node_modules
+dist
+coverage
+lib
+.vscode
+.DS_Store
+.husky
+.github

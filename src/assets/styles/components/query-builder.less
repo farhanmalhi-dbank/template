@@ -1,0 +1,159 @@
+.queryBuilder .ant-input {
+  width: auto;
+  background-color: @secondary-color;
+}
+
+.ruleGroup-header {
+  padding: 8px 8px 8px 0px;
+
+  .ant-btn:hover {
+    background-color: transparent;
+    color: @primary-color;
+    span {
+      text-decoration: underline;
+    }
+  }
+  .ruleGroup-combinators {
+    padding: 10px;
+
+    .ant-select-selector {
+      border-radius: 10px;
+    }
+  }
+  .ant-btn-primary {
+    background-color: transparent;
+    color: @primary-color;
+    border-color: @primary-color;
+    border: 0px solid;
+    box-shadow: none;
+    text-shadow: 0px;
+  }
+
+  .ruleGroup-addRule {
+    border-radius: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .ruleGroup-remove {
+    border: 0px solid;
+    float: right;
+    font-weight: 800;
+    color: @danger-color;
+    font-size: 14px;
+  }
+
+  .ruleGroup-remove:hover {
+    color: @danger-color;
+  }
+}
+
+.queryBuilder-dragHandle {
+  display: none;
+}
+
+.queryBuilder {
+  .ant-picker {
+    border-radius: 8px;
+    input {
+      padding: 1px 8px 1px 4px;
+      background: transparent;
+      border: none;
+    }
+  }
+  .rule {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+    .ant-picker-range {
+      width: auto;
+    }
+  }
+
+  .rule-fields {
+    .ant-select-selector {
+      border-radius: 10px;
+    }
+  }
+
+  .rule-operators {
+    margin-left: 10px;
+
+    .ant-select-selector {
+      border-radius: 10px;
+    }
+  }
+
+  .rule-value {
+    margin-left: 10px;
+  }
+
+  .rule-remove {
+    margin-left: 10px;
+    background-color: transparent;
+    color: @primary-color;
+    border: 0px solid;
+    box-shadow: none;
+    text-shadow: 0px;
+    font-weight: 800;
+  }
+
+  .rule-remove:hover {
+    background-color: transparent;
+    color: @primary-color;
+    span {
+      text-decoration: underline;
+    }
+  }
+
+  .ruleGroup {
+    background: @secondary-color;
+  }
+  .ruleGroup-addRule {
+    span {
+      visibility: hidden;
+    }
+    span:before {
+      content: 'Add Filter';
+      visibility: visible;
+      display: contents;
+    }
+  }
+  .ruleGroup-addGroup {
+    span {
+      visibility: hidden;
+    }
+    span:before {
+      content: 'Add Group';
+      visibility: visible;
+      display: contents;
+    }
+  }
+  .ruleGroup-body {
+    margin: 10px;
+    color: @primary-color;
+    .ant-btn:hover {
+      background-color: transparent;
+    }
+    .ruleGroup {
+      background: @input-background-color;
+      border-radius: 12px;
+
+      .ruleGroup-addGroup {
+        display: none;
+      }
+    }
+  }
+}
+
+.ruleGroup {
+  margin-top: 10px;
+}
+
+.queryBuilder-invalid {
+  input {
+    border: 0.8px solid @danger-color;
+    box-shadow: 0px 0px 5px 0px @danger-color;
+  }
+}

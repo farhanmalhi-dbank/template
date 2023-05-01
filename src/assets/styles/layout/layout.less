@@ -1,0 +1,76 @@
+.ant-layout .ant-layout-header {
+  padding: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.container {
+  padding: 10px;
+  overflow: auto;
+}
+
+.trigger {
+  padding: 0 24px;
+  font-size: 18px;
+  line-height: 64px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.logo {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  padding-left: 24px;
+  width: 200px;
+  height: 60px;
+  background: @secondary-color;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  align-items: center;
+}
+
+.logo-collapsed {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 80px;
+  height: 60px;
+  background: @secondary-color;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  align-items: center;
+}
+
+.logo-image-main {
+  width: 33.64px;
+  height: 24px;
+}
+
+.logo-image-secondary {
+  width: 64.65px;
+  height: 22.68px;
+}
+
+.site-layout .site-layout-background {
+  background: @secondary-color;
+}
+
+.ant-layout-sider-light {
+  top: 0;
+  left: 0;
+  .ant-menu-item {
+    &-selected {
+      color: @primary-color;
+      background-color: @menu-selected-bg-color;
+    }
+  }
+  .ant-menu-light:not(.ant-menu-horizontal) .ant-menu-item:not(.ant-menu-item-selected):hover {
+    color: @primary-color;
+    background-color: transparent;
+  }
+}
