@@ -52,10 +52,7 @@ const Center = () => {
               </span>
             )}
             <Button data-test-id="search-dropdown-button" className="filter-btn" onClick={clickHandler}>
-              <Icon
-                className={`filter-icon ${dropdownActive ? 'filter-icon-background' : ''}`}
-                name={`${queryBuilder.rules.length > 0 ? 'filter-selected' : 'filter-basic'}`}
-              />
+              <Icon className={`filter-icon ${dropdownActive ? 'filter-icon-background' : ''}`} name="check-circle-outlined" />
             </Button>
           </>
         }

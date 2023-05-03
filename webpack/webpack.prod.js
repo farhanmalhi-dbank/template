@@ -1,5 +1,4 @@
 const webpack = require('webpack');
-const path = require('path');
 const CopyPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
@@ -10,10 +9,6 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 module.exports = {
   mode: 'production',
   devtool: 'source-map',
-  output: {
-    filename: 'js/[name].[contenthash].js',
-    path: path.join(__dirname, '..', 'dist')
-  },
   optimization: {
     minimizer: [
       new TerserPlugin({

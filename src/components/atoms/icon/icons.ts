@@ -23,6 +23,14 @@ import {
 } from '@ant-design/icons';
 
 const icons = Object.freeze({
+  'user-filled': DashboardFilled,
+  'user-role-filled': DashboardFilled,
+  'bell-filled': DashboardFilled,
+  'edit-pen': DashboardFilled,
+  'bank-char': DashboardFilled,
+  'd-char': DashboardFilled,
+  'dbank-char': DashboardFilled,
+  'd-lines': DashboardFilled,
   'dashboard-filled': DashboardFilled,
   'cluster-outlined': ClusterOutlined,
   'code-sandbox-outlined': CodeSandboxOutlined,
@@ -31,7 +39,9 @@ const icons = Object.freeze({
   'double-right-filled': DoubleRightOutlined,
   'double-left-filled': DoubleLeftOutlined,
   'down-filled': DownOutlined,
+  'filter-basic': DashboardFilled,
   'logout-outlined': LogoutOutlined,
+  'filter-selected': DashboardFilled,
   'close-outlined': CloseOutlined,
   'eye-outlined': EyeOutlined,
   'close-circle-outlined': CloseCircleOutlined,

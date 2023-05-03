@@ -88,8 +88,8 @@ module.exports = {
     ]
   },
   output: {
-    path: path.resolve(__dirname, '..', './build'),
-    filename: 'bundle.js'
+    filename: 'js/[name].[contenthash].js',
+    path: path.join(__dirname, '..', 'dist')
   },
   plugins: [
     new HtmlWebpackPlugin({
